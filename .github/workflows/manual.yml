@@ -2,8 +2,7 @@ name: F3SRP
 
 on:
   schedule:
-    - cron: '*/08 * * * *'
-
+    - cron: '*/10 0-23 * * *'
 jobs:
   runtests:
     runs-on: ubuntu-latest
