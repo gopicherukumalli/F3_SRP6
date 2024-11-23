@@ -21,7 +21,7 @@ public class flyAdeal extends FlyAdealCacheFlow  {
 	
 	static String Depdate=null;
 	static String Currency=null;
-	static String Year = "2024";
+	static String Year =null;
 	
 	private static String getCurrentDateFormatted(String format) {
         LocalDate currentDate = LocalDate.now();
@@ -112,11 +112,11 @@ public class flyAdeal extends FlyAdealCacheFlow  {
                     String day = dateParts[0];
                     String monthAbbreviation = dateParts[1];
                     
-                    /*if (monthAbbreviation.equals("Nov") || monthAbbreviation.equals("Dec")) {
-                    	Year = "2023";
-                    } else {
+                    if (monthAbbreviation.equals("Nov") || monthAbbreviation.equals("Dec")) {
                     	Year = "2024";
-                    }*/
+                    } else {
+                    	Year = "2025";
+                    }
                     String Departdate = String.format("%s %s %s", day, monthAbbreviation, Year);
 
                     //System.out.println("SRP Date: " + Departdate);
